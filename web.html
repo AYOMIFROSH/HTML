@@ -2,6 +2,7 @@
 <html lang="en">
     <!--i define the head portion of the document and i also style my background color-->
     <head>
+      <meta charset="UTF-8">
         <title>Temitayo (smile)</title>
         <style>
             body {
@@ -10,17 +11,15 @@
         </style>
     </head>
     <body>
-        <!--i added a search bar-->
-        <form>
-            Search <input type = "text" name = "search" />
-        </form>
-        <!--this is a header-->
-       <header>
-            <h1>AYOMIFROSH</h1>
-        </header>
-        <!--the use of the <nav> tag, the unordered list <ul>, the bold <b> and the italic format <i>-->
-        <nav>
-        <ul>
+
+<!--this is a header-->
+      <header>
+        <h1>AYOMIFROSH</h1>
+    </header>
+
+      <!--the use of the <nav> tag, the unordered list <ul>, the bold <b> and the italic format <i>-->
+
+        <ul style="display: flex;justify-content: space-around;">
            <i><b><li><a href="https://github.com/AYOMIFROSH">Home</a></li></b></i>
             <br>
             <i><b><li><a href="https://github.com/AYOMIFROSH/Git_and_GitHub_project.git">About</a></li></b></i>
@@ -31,9 +30,18 @@
             <br>
             <i><b><li><a href="https://www.linkedin.com/in/temitayo-oluwanishola-630835276">contact</a></li></b></i>
         </ul>
-        <!--i added the login forum using the h2 as implemented on the page and i make use of the label tag-->
-        <h2>Login Form</h2>
+
+        <!--i added a search bar-->
+        <form>
+          Search <input type = "text" name = "search" />
+      </form>
+
+      <nav>
+ <!--i added the login forum using the h2 as implemented on the page and i make use of the label tag-->
+
 	<form>
+    <h2>Login Form</h2>
+
 		<b><label for="username">Username:</label><br></b>
 		<input type="text" id="username" name="username"><br>
 		<b><label for="password">Password:</label><br></b>
@@ -51,19 +59,19 @@
             <option value="log out">sign out</option>
           </select>
           <!--i make use of the paragraph, i make use of the italic format <i> for the element and added a bold text to it-->
-          <b><i><p>you are welcome my distinguish Ladies and Gentlemen</p></i></b>
-            <b><i><p>feel free to explore my content!</p></i></b>
+          <p><i><b>you are welcome my distinguish Ladies and Gentlemen</b></i></p>
+            <p><i><b>feel free to explore my content!</b></i></p>
           <p>i am happy you checked out my page, you can give a feedback below what did you notice about my page!</p>
 
           <p></p>
           <iframe width="560" height="315" src="https://www.youtube.com/embed/nLomg_odiWE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-          <i><p>how fast did you read to learn?..... hmm here is a few tip for you to read and learn to remember!</p></i>
- 
+          <h2><i>how fast did you read to learn?..... hmm here is a few tip for you to read and learn to remember!</i></h2>
           <br>
           <!--i added little content to make the page look educative-->
-          <ol>
+         
           <p>Here are some tips that can help you read and remember faster</p>
 
+          <ol>
             <li>read: Glance through the text and flick through the pages to try to find the key points.</li>
             <li>Meta-guiding: Use your finger to point to specific words, to keep your eyes on track without getting distracted.
             Learn to read several lines at a time.</li>
@@ -91,7 +99,8 @@
           <b><label for="lname">Last name:</label></b>
           <input type="text" id="lname" name="lname" form="form1"><br><br>
           <b><input type="submit" value="Submit"></b>
+          </form>
           <p></p>
-          
-    </body>
+   
+        </body>
 </html>
