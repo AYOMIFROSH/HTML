@@ -9,27 +9,46 @@
                 background-color: lightblue;
             }
             select {
-              text-align-last: right;
+              text-align-last: left;
               position: absolute;
-               top: 120px;
-               right: 200px;
-
+               top: 30px;
+               right: 210px;
+               background-color: whitesmoke;
+               text-decoration-color: blanchedalmond;
+               text-decoration-color: azure;
             }
             option{
               direction: rtl;
             }
+
+            .montain {
+              background-color: darkgreen;
+              color: wheat;
+              text-align: left;
+              font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            }
+
+          .crown {
+            text-align: right;
+            position: sticky;
+            background-color: blue;
+          }
+
+        .thelist {
+          background-color: whitesmoke;
+        }
         </style>
     </head>
     <body>
 
 <!--this is a header-->
-      <header>
+      <header class="montain">
         <h1>AYOMIFROSH</h1>
     </header>
 
       <!--the use of the <nav> tag, the unordered list <ul>, the bold <b> and the italic format <i>-->
 
-        <ul style="display: flex;justify-content: space-around;">
+        <ul style="display: flex;justify-content: space-around;" class="thelist">
            <i><b><li><a href="https://github.com/AYOMIFROSH">Home</a></li></b></i>
             <br>
             <i><b><li><a href="https://github.com/AYOMIFROSH/Git_and_GitHub_project.git">About</a></li></b></i>
@@ -42,9 +61,9 @@
         </ul>
 
         <!--i added a search bar-->
-        <form>
-          Search <input type = "text" name = "search" />
-      </form>
+        <form class="crown">
+          <b>Search <input type = "text" name = "search"/></b>
+        </form>
 
       <nav>
  <!--i added the login forum using the h2 as implemented on the page and i make use of the label tag-->
@@ -62,9 +81,9 @@
     <p></p>
         </nav>
         <!--i use the <select> tag here to create a drop down-list for my page-->
-        <select>
-            <option value="Biography"><a href="https://github.com/AYOMIFROSH/">story</option></a>
-            <option value="Hobbies">Hobbies</option>
+        <select onchange="window.loctaion.assing(this.value)">
+            <option value="https://github.com/AYOMIFROSH/">story</option>
+            <option value="https://www.theverge.com/tech">technologies</option>
             <option value="Television series">series</option>
             <option value="log out">sign out</option>
           </select>
